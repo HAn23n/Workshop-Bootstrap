@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2 class="text-center">Workshop 6</h2>
+        <input type="button" value="Add New Item" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    
+    <div class="card mt-3">
+        <div class="card-header"><h3>Item List</h3></div>
+          
+            <div class="card-body">
+                <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Item 1</td>
+                        <td>Category 1</td>
+                        <td>
+                            <button type="button" class="btn btn-warning" >
+                                Edit
+                              </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Item 2</td>
+                        <td>Category 2</td>
+                        <td>
+                            <button type="button" class="btn btn-warning" >
+                                Edit
+                              </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Item</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form action="">
+                        <div class="col-12">
+                            <label for="">Item Name</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="Enter item name">
+                        </div>
+                        <div class="col-12">
+                            <div class="dropdown">
+                                <label for="">Category</label>
+                                <select class="form-select" aria-label="Category">
+                                    <option selected>Choose category</option>
+                                    <option value="1">Category 1</option>
+                                    <option value="2">Category 2</option>
+                                    <option value="3">Category 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="liveToast" class="toast hide bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header ">
+                                <strong class="me-auto">Success</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Item added successfully!
+                            </div>
+                        </div>
+                    </div>
+       
+                    <div class="col mt-3">
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">Add item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+      <script>
+        const toastTrigger = document.getElementById('liveToastBtn');
+        const toastLive = document.getElementById('liveToast');
+    
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(toastLive);
+                toast.show();
+            });
+        }
+    </script>
+</body>
+</html>

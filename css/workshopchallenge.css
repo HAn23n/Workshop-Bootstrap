@@ -1,0 +1,63 @@
+nav,.dropdown{
+    background-color: #438abf;
+}
+.col-12.info{
+    margin-top: 30px;
+    margin-left: 120px;
+}
+i.fa-solid.fa-plus{
+    color: rgb(255, 255, 255);
+    background-color: rgb(180, 180, 180);
+    border-radius:50% ;
+    padding: 2.5px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+display: inline-block;
+width: 2rem;
+height: 2rem;
+background-repeat: no-repeat;
+background-position: 50%;
+background-size: 100% 100%;
+color: blue;
+}
+i.fas.fa-chevron-circle-left, i.fas.fa-chevron-circle-right{
+color:#438abf;
+margin-top: 13px;
+}
+h6{
+    color:#438abf;
+
+}
+input[ type="button"] {
+    text-align: center;
+    height: 25px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 10px ;
+}
+img{
+    width: 25px;
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.np{
+    position: relative;
+}
+.prepage{ 
+    position: absolute;
+    color: #7fb8e3;   
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 275px;
+    margin-left: 530px;
+}
+
+.nextpage{
+    position: absolute;
+    color: #7fb8e3;   
+    font-weight: bold;
+    font-size: 50px;  
+    margin-top: 275px;
+    margin-left: 735px;
+}
